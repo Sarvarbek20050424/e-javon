@@ -1,5 +1,4 @@
-// src/app/talaba/javon/page.tsx
-import { createClient } from "@/lib/supabase/server";
+﻿import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { AppShell } from "@/components/layout/app-shell";
 import JavonClient from "./javon-client";
@@ -11,8 +10,14 @@ export default async function JavonPage() {
 
   const { data: profile } = await supabase
     .from("profiles").select("full_name").eq("id", user.id).single();
-  const { data: student } = await supabase
-    .from("students").select("groups(name)").eq("id", user.id).single();
+
+  // ✅ CAST: Supabase nested select tipi noto'g'ri chiqadi
+  const { data: studentRaw } = await supabase
+    .from("students")
+    .select("groups(name)")
+    .eq("id", user.id)
+    .maybeSingle();
+  const student = studentRaw as any;
 
   return (
     <AppShell
