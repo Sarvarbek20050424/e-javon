@@ -1,0 +1,11 @@
+A'zo ismi,Asosiy roli,Vazifa IDlari,Bajarilgan vazifalar soni,Jami haqiqiy soat,Jamoa soatidagi ulushi (%),Hissa va dalil (havola/izoh)
+A'zo 1,Kontent koordinatori,,,,=IFERROR(E2/SUM(E$2:E$10)*100,0),
+A'zo 2,Yo'riqnoma muallifi,,,,=IFERROR(E3/SUM(E$2:E$10)*100,0),
+A'zo 3,Maxfiylik muharriri,,,,=IFERROR(E4/SUM(E$2:E$10)*100,0),
+A'zo 4,Vizual muharrir,,,,=IFERROR(E5/SUM(E$2:E$10)*100,0),
+A'zo 5,Tekshiruvchi,,,,=IFERROR(E6/SUM(E$2:E$10)*100,0),
+A'zo 6,Administrator yo'riqnomasi muallifi,,,,=IFERROR(E7/SUM(E$2:E$10)*100,0),
+A'zo 7,Talaba yo'riqnomasi muallifi,,,,=IFERROR(E8/SUM(E$2:E$10)*100,0),
+A'zo 8,O'qituvchi yo'riqnomasi muallifi,,,,=IFERROR(E9/SUM(E$2:E$10)*100,0),
+A'zo 9,Loyiha koordinatori,,,,=IFERROR(E10/SUM(E$2:E$10)*100,0),
+JAMI,,,,=SUM(E2:E10),=SUM(F2:F10),

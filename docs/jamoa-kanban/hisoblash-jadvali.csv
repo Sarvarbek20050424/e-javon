@@ -1,0 +1,14 @@
+Vazifa ID,Vazifa,Mas'ul a'zo (ism),Reja soati,Haqiqiy soat,Farq (haqiqiy-reja),Holat
+K01,E-javon funksiyalarini ko'rib chiqish,,3,,=IF(E2="","",E2-D2),Navbatda
+K02,Auditoriyalar va ehtiyojlarni aniqlash,,2,,=IF(E3="","",E3-D3),Navbatda
+K03,Kontent tuzilmasi va atamalar lug'ati,,2,,=IF(E4="","",E4-D4),Navbatda
+K04,Talaba uchun hujjat yaratish qo'llanmasi,,4,,=IF(E5="","",E5-D5),Navbatda
+K05,Saqlash PDF va chop etish yo'riqnomasi,,2,,=IF(E6="","",E6-D6),Navbatda
+K06,Ulashish va maxfiylik eslatmasi,,3,,=IF(E7="","",E7-D7),Navbatda
+K07,O'qituvchi uchun qo'llanma,,3,,=IF(E8="","",E8-D8),Navbatda
+K08,Administrator uchun qo'llanma,,2,,=IF(E9="","",E9-D9),Navbatda
+K09,FAQ va muammolarni bartaraf etish,,2,,=IF(E10="","",E10-D10),Navbatda
+K10,Ekran tasvirlari yoki vizual belgilar,,2,,=IF(E11="","",E11-D11),Navbatda
+K11,Fakt til va qulaylik tekshiruvi,,3,,=IF(E12="","",E12-D12),Navbatda
+K12,Yakunlash va topshirish,,1,,=IF(E13="","",E13-D13),Navbatda
+JAMI,, ,=SUM(D2:D13),=SUM(E2:E13),=IF(E14="","",E14-D14),
